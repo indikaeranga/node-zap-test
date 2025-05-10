@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  webapp:
+    image: zap-test-app
+    build:
+      context: ./app
+    deploy:
+      replicas: 10
+      restart_policy:
+        condition: on-failure
+    networks:
+      - zap-net
+    ports:
+      - "8080:3000"  # Load balances across 10 containers
+
+networks:
+  zap-net:
+    driver: overlay
