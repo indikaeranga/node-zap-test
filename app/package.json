@@ -1,12 +1,12 @@
 {
-    "name": "zap-test-app",
-    "version": "1.0.0",
-    "main": "server.js",
-    "dependencies": {
-      "ip": "^1.1.5"
-    },
-    "scripts": {
-      "start": "node server.js"
-    }
+  "name": "zaptest-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "os": "^0.1.2"
   }
-  
+}
