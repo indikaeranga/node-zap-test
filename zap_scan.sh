@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # CONFIG
-TARGET_URL="http://localhost:8080"     # ZAP will target the ingress load-balanced endpoint
+TARGET_URL="http://localhost:8080"     # ZAP will target the ingress load-balanced endpoint ...
 REPORT_NAME="zap_report.html"
 ZAP_CONTAINER_NAME="zap-scan"
 ZAP_IMAGE="owasp/zap2docker-stable"
